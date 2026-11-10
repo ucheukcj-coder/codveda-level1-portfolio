@@ -18,6 +18,9 @@
 </head>
 
 <body>
+    <div class="scroll-progress" aria-hidden="true">
+        <span id="scrollProgress"></span>
+    </div>
 
     <!-- Navigation -->
     <header>
@@ -48,7 +51,8 @@
 
                 <h1>Hello, I'm <span>Ucee</span></h1>
 
-                <h2>Web Developer</h2>
+                <h2><span class="role-text" id="roleText"
+                    aria-label="Web Developer, Frontend Developer, and JavaScript Developer">Web Developer</span></h2>
 
                 <p class="hero-description">
                     I build responsive and interactive web applications
@@ -248,10 +252,11 @@
     <script src="script.js"></script>
 
     <script>
-        lucide.createIcons();
+        if (window.lucide) {
+            lucide.createIcons();
+        }
     </script>
 
 </body>
 
 </html>
-```

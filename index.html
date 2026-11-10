@@ -18,16 +18,15 @@
 </head>
 
 <body>
-
-    <!-- Navigation -->
+    <div class="scroll-progress" aria-hidden="true">
+        <span id="scrollProgress"></span>
+    </div>
     <header>
         <nav class="navbar">
-            <a href="#home" class="logo">Ucee<span>.</span></a>
-
+            <a href="#home" class="logo" aria-label="Ucee, home">Ucee<span>.</span></a>
             <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">
                 <i data-lucide="menu"></i>
             </button>
-
             <ul class="nav-links" id="navLinks">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -35,148 +34,127 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <a href="#contact" class="nav-cta">
+                Let's talk
+                <i data-lucide="arrow-up-right"></i>
+            </a>
         </nav>
     </header>
 
     <main>
-
-        <!-- Hero Section -->
         <section id="home" class="hero">
-
-            <div class="hero-content">
+            <div class="hero-content reveal">
                 <p class="welcome">WELCOME TO MY PORTFOLIO</p>
-
                 <h1>Hello, I'm <span>Ucee</span></h1>
-
-                <h2>Web Developer</h2>
-
+                <h2><span class="role-text" id="roleText"
+                    aria-label="Web Developer, Frontend Developer, and JavaScript Developer">Web Developer</span></h2>
                 <p class="hero-description">
                     I build responsive and interactive web applications
                     while constantly learning and improving my skills.
                 </p>
-
                 <div class="hero-buttons">
                     <a href="#projects" class="btn primary-btn">View My Work</a>
                     <a href="#contact" class="btn secondary-btn">Contact Me</a>
                 </div>
-
                 <div class="social-links">
                     <a href="https://github.com/ucheukcj-coder" target="_blank" rel="noopener noreferrer"
                         aria-label="GitHub">
                         <i data-lucide="github"></i>
                     </a>
-
                     <a href="YOUR_LINKEDIN_PROFILE_LINK" target="_blank" rel="noopener noreferrer"
                         aria-label="LinkedIn">
                         <i data-lucide="linkedin"></i>
                     </a>
                 </div>
             </div>
-
-            <div class="hero-image">
+            <div class="hero-image reveal reveal-delay-1">
+                <span class="portrait-code portrait-code-left" aria-hidden="true">{ }</span>
+                <span class="portrait-code portrait-code-right" aria-hidden="true">&lt;/&gt;</span>
+                <span class="portrait-dot" aria-hidden="true"></span>
                 <img src="images/profile.jpg" alt="Portrait of Ucee">
+                <div class="status-card">
+                    <span class="status-dot"></span>
+                    <span>
+                        <strong>Available for work</strong>
+                        <small>Open to opportunities</small>
+                    </span>
+                </div>
             </div>
-
         </section>
 
-        <!-- About Section -->
         <section id="about" class="section">
-
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <p>GET TO KNOW ME</p>
                 <h2>About Me</h2>
             </div>
-
-            <div class="about-content">
+            <div class="about-content reveal reveal-delay-1">
                 <p>
                     I'm a web developer currently developing my skills
                     in frontend and backend technologies.
-
                     I enjoy building interactive applications,
                     solving problems through code, and exploring
                     new technologies.
-
                     My goal is to become a skilled developer
                     capable of creating useful digital solutions.
                 </p>
             </div>
-
         </section>
 
-        <!-- Skills Section -->
         <section id="skills" class="section skills-section">
-
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <p>WHAT I WORK WITH</p>
                 <h2>My Skills</h2>
             </div>
-
             <div class="skills-container">
-
-                <div class="skill-card">
+                <div class="skill-card reveal">
                     <i data-lucide="code"></i>
                     <h3>HTML</h3>
                     <p>Web structure</p>
                 </div>
-
-                <div class="skill-card">
+                <div class="skill-card reveal reveal-delay-1">
                     <i data-lucide="palette"></i>
                     <h3>CSS</h3>
                     <p>Web styling</p>
                 </div>
-
-                <div class="skill-card">
+                <div class="skill-card reveal reveal-delay-2">
                     <i data-lucide="file-code"></i>
                     <h3>JavaScript</h3>
                     <p>Web interactivity</p>
                 </div>
-
-                <div class="skill-card">
+                <div class="skill-card reveal">
                     <i data-lucide="component"></i>
                     <h3>React</h3>
                     <p>Frontend development</p>
                 </div>
-
-                <div class="skill-card">
+                <div class="skill-card reveal reveal-delay-1">
                     <i data-lucide="server"></i>
                     <h3>Node.js</h3>
                     <p>Backend development</p>
                 </div>
-
-                <div class="skill-card">
+                <div class="skill-card reveal reveal-delay-2">
                     <i data-lucide="github"></i>
                     <h3>Git & GitHub</h3>
                     <p>Version control</p>
                 </div>
-
             </div>
-
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="section">
-
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <p>MY RECENT WORK</p>
                 <h2>Featured Projects</h2>
             </div>
-
             <div class="projects-container">
-
-                <div class="project-card">
-
+                <div class="project-card reveal reveal-delay-1">
                     <div class="project-icon">
                         <i data-lucide="gamepad-2"></i>
                     </div>
-
                     <div class="project-info">
                         <h3>Rock Paper Scissors Multiplayer</h3>
-
                         <p>
                             A multiplayer web game that allows players
                             to compete against each other in real time.
                         </p>
-
                         <div class="project-tags">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -193,28 +171,21 @@
                             Live Demo <i data-lucide="external-link"></i>
                         </a>
                     </div>
-
                 </div>
-
             </div>
-
         </section>
 
-        <!-- Contact Section -->
         <section id="contact" class="section contact-section">
-
-            <div class="section-heading">
+            <div class="section-heading reveal">
                 <p>LET'S CONNECT</p>
                 <h2>Contact Me</h2>
             </div>
 
-            <p class="contact-description">
+            <p class="contact-description reveal">
                 Have a project or opportunity in mind?
                 Feel free to send me a message.
             </p>
-
-
-            <form id="contactForm">
+            <form id="contactForm" class="reveal reveal-delay-1">
                 <div class="form-group">
                     <label for="name">Your Name</label>
                     <input type="text" id="name" placeholder="Enter your name" required />
@@ -231,27 +202,24 @@
                 </div>
 
                 <button type="submit">Send Message</button>
-
                 <p id="formMessage" role="status"></p>
             </form>
-
-
         </section>
     </main>
 
-    <!-- Footer --> 
     <footer>
         <p>&copy; 2026 Ucee. All Rights Reserved.</p>
         <a href="#home">Back to top ↑</a>
     </footer>
 
-    <script src="script.js"></script>
+    <script type="module" src="/script.js"></script>
 
     <script>
-        lucide.createIcons();
+        if (window.lucide) {
+            lucide.createIcons();
+        }
     </script>
 
 </body>
 
 </html>
-```
